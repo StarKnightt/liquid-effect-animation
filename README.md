@@ -1,6 +1,6 @@
 # Liquid Effect Animation
 
-A interactive liquid distortion effect component for React. Built with Three.js, designed for the shadcn/ui ecosystem.
+An interactive liquid distortion effect component for React. Built on top of the [`threejs-components`](https://github.com/klevron/threejs-components) library by [Kevin Levron](https://codepen.io/soju22), designed for the shadcn/ui ecosystem.
 
 Hover or touch the canvas and watch the text ripple like liquid chrome.
 
@@ -141,6 +141,14 @@ Works in all modern browsers that support WebGL:
 - Firefox 80+
 - Safari 15+
 - Mobile Safari / Chrome on iOS and Android
+
+## Credits
+
+The liquid distortion effect is powered by [`threejs-components`](https://github.com/klevron/threejs-components), created by [Kevin Levron (@soju22)](https://codepen.io/soju22). The original liquid shader and Three.js implementation are entirely his work. This project wraps it into a React component with text rendering, customizable props, and shadcn/ui integration.
+
+- Original CodePen: [codepen.io/soju22/pen/myVWBGa](https://codepen.io/soju22/pen/myVWBGa)
+- Library: [threejs-components on npm](https://www.npmjs.com/package/threejs-components)
+- Author: [Kevin Levron on Framer](https://www.framer.com/@kevin-levron/)
 
 ## License
 
