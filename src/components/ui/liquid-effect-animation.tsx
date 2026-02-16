@@ -11,9 +11,9 @@ interface LiquidEffectAnimationProps {
 }
 
 export function LiquidEffectAnimation({
-  text = ["Liquid", "Effect"],
-  subText = "Interactive UI Component",
-  tagline = "Built with Three.js  •  React  •  Tailwind CSS",
+  text,
+  subText,
+  tagline,
   backgroundColor = "#fafafa",
   textColor = "#1d1d1f",
 }: LiquidEffectAnimationProps) {
@@ -74,10 +74,10 @@ export function LiquidEffectAnimation({
     ctx.textBaseline = "middle"
 
     const lineHeight = fontSize * 1.08
-    const totalHeight = text.length * lineHeight
+    const totalHeight = (text?.length || 0) * lineHeight
     const startY = h / 2 - totalHeight / 2 + lineHeight / 2
 
-    text.forEach((line, i) => {
+    text?.forEach((line, i) => {
       ctx.fillStyle = textColor
       ctx.globalAlpha = 1
       ctx.fillText(line, w / 2, startY + i * lineHeight)
@@ -86,7 +86,7 @@ export function LiquidEffectAnimation({
     // Thin divider — barely there
     ctx.globalAlpha = 0.12
     ctx.fillStyle = textColor
-    const dividerY = startY + text.length * lineHeight + w * 0.018
+    const dividerY = startY + (text?.length || 0) * lineHeight + w * 0.018
     ctx.fillRect(w / 2 - 30, dividerY, 60, 0.5)
 
     // Tagline — light, airy
