@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "liquid-effect-animation",
+  "homepage": "https://github.com/StarKnightt/liquid-effect-animation",
+  "items": [
+    {
+      "name": "liquid-effect-animation",
+      "type": "registry:block",
+      "title": "Liquid Effect Animation",
+      "description": "Interactive liquid distortion effect component powered by Three.js. Renders customizable text onto an offscreen canvas and applies a WebGL liquid shader with mouse/touch interaction. Zero npm dependencies.",
+      "files": [
+        {
+          "path": "registry/new-york/liquid-effect-animation/liquid-effect-animation.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}

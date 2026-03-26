@@ -41,8 +41,8 @@ export default function Home() {
           <span className="text-xs font-medium uppercase tracking-widest text-neutral-400">
             Quick start
           </span>
-          <code className="rounded-lg border border-neutral-200 bg-white px-5 py-3 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300">
-            npx shadcn@latest add liquid-effect-animation
+          <code className="rounded-lg border border-neutral-200 bg-white px-5 py-3 text-[13px] text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300">
+            npx shadcn@latest add https://starknightt.github.io/liquid-effect-animation/r/liquid-effect-animation.json
           </code>
         </div>
 

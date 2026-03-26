@@ -19,6 +19,14 @@ Run the project locally and visit `/demo` to see it in action.
 
 ## Installation
 
+### One-command install (recommended)
+
+```bash
+npx shadcn@latest add https://starknightt.github.io/liquid-effect-animation/r/liquid-effect-animation.json
+```
+
+This copies the component directly into your `components/ui/` folder. Zero npm dependencies.
+
 ### Prerequisites
 
 A React project with the shadcn/ui structure. If you don't have one:
@@ -27,17 +35,15 @@ A React project with the shadcn/ui structure. If you don't have one:
 npx shadcn@latest init
 ```
 
-### Copy the component
+### Manual install
 
-Copy `liquid-effect-animation.tsx` into your project:
+If you prefer, copy [`liquid-effect-animation.tsx`](src/components/ui/liquid-effect-animation.tsx) into your project:
 
 ```
 src/components/ui/liquid-effect-animation.tsx
 ```
 
 > **Why `/components/ui`?** This is the shadcn convention. All reusable UI primitives live here so they're co-located, easy to find, and consistent with other shadcn components you may add.
-
-No additional npm dependencies are required. The Three.js liquid renderer is loaded from a CDN at runtime.
 
 ## Usage
 
