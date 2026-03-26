@@ -67,11 +67,13 @@ export default function Page() {
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `text` | `string[]` | `["Liquid", "Effect"]` | Main heading lines. Each string renders on its own line. |
-| `subText` | `string` | `"Interactive UI Component"` | Small uppercase label above the heading. |
-| `tagline` | `string` | `"Built with Three.js • React • Tailwind CSS"` | Caption below the heading. |
+| `text` | `string[]` | `undefined` | Main heading lines. Each string renders on its own line. |
+| `subText` | `string` | `undefined` | Small uppercase label above the heading. |
+| `tagline` | `string` | `undefined` | Caption below the heading. |
 | `backgroundColor` | `string` | `"#fafafa"` | Canvas background color. |
 | `textColor` | `string` | `"#1d1d1f"` | Text color for all type elements. |
+
+All props are optional. Pass none for a blank liquid canvas, or customize as needed.
 
 ## Examples
 
